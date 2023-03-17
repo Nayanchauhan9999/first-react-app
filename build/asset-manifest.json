@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/first-react-app/static/css/main.67b094b1.css",
-    "main.js": "/first-react-app/static/js/main.5e937f57.js",
-    "static/media/patallok.jpg": "/first-react-app/static/media/patallok.a59afcb599a61b555c33.jpg",
-    "static/media/mirzapur.jpg": "/first-react-app/static/media/mirzapur.0fa6784d5c2084f7f703.jpg",
-    "static/media/shot.jpg": "/first-react-app/static/media/shot.975c0d64d089f2dcac77.jpg",
-    "static/media/tandav.webp": "/first-react-app/static/media/tandav.3c2a1f0f6647b01e8a86.webp",
-    "static/media/The_Family_Man.jpeg": "/first-react-app/static/media/The_Family_Man.b82747524609e0ad8c92.jpeg",
-    "static/media/mos.jfif": "/first-react-app/static/media/mos.118062ade8ebffdbc3fa.jfif",
-    "index.html": "/first-react-app/index.html",
-    "static/media/visual-studio-code-1.svg": "/first-react-app/static/media/visual-studio-code-1.b8b1e001813039750e6c05c236ab0d46.svg",
-    "static/media/magnifying-glass-solid.svg": "/first-react-app/static/media/magnifying-glass-solid.3cccb2fe95c0d431b52d.svg",
-    "main.67b094b1.css.map": "/first-react-app/static/css/main.67b094b1.css.map",
-    "main.5e937f57.js.map": "/first-react-app/static/js/main.5e937f57.js.map"
+    "main.css": "/static/css/main.5af4a1b6.css",
+    "main.js": "/static/js/main.e699443a.js",
+    "static/media/patallok.jpg": "/static/media/patallok.a59afcb599a61b555c33.jpg",
+    "static/media/mirzapur.jpg": "/static/media/mirzapur.0fa6784d5c2084f7f703.jpg",
+    "static/media/shot.jpg": "/static/media/shot.975c0d64d089f2dcac77.jpg",
+    "static/media/tandav.webp": "/static/media/tandav.3c2a1f0f6647b01e8a86.webp",
+    "static/media/The_Family_Man.jpeg": "/static/media/The_Family_Man.b82747524609e0ad8c92.jpeg",
+    "static/media/mos.jfif": "/static/media/mos.118062ade8ebffdbc3fa.jfif",
+    "index.html": "/index.html",
+    "static/media/visual-studio-code-1.svg": "/static/media/visual-studio-code-1.b8b1e001813039750e6c05c236ab0d46.svg",
+    "static/media/magnifying-glass-solid.svg": "/static/media/magnifying-glass-solid.3cccb2fe95c0d431b52d.svg",
+    "main.5af4a1b6.css.map": "/static/css/main.5af4a1b6.css.map",
+    "main.e699443a.js.map": "/static/js/main.e699443a.js.map"
   },
   "entrypoints": [
-    "static/css/main.67b094b1.css",
-    "static/js/main.5e937f57.js"
+    "static/css/main.5af4a1b6.css",
+    "static/js/main.e699443a.js"
   ]
 }

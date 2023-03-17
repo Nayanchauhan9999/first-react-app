@@ -44,6 +44,8 @@ import Home from "./Portfolio site/Home";
 import About from "./Portfolio site/About";
 import Contact from "./Portfolio site/Contact";
 import Blog from "./Portfolio site/Blog";
+import Component35 from "./Components/Component_35";
+import AllinOneIcon from "./Components/Component_36";
 function App() {
   return (
     <React.Fragment>
@@ -104,6 +106,8 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog />} />
           </Route>
+        <Route path="component35" element={<Component35/>} />
+        <Route path="allinoneicons" element={<AllinOneIcon/>} />
         </Routes>
       </BrowserRouter>
     </React.Fragment>

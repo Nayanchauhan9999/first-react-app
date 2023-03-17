@@ -135,7 +135,7 @@ function ComponentList() {
           <NavLink to="/allinoneicons">All In One Icons</NavLink>
         </li>
         <li>
-          <NavLink to="/portfolio">Nayan Portfolio</NavLink>
+          <NavLink to="/component35">Quotes API</NavLink>
         </li>
       </ol>
     </React.Fragment>

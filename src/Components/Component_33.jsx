@@ -16,7 +16,7 @@ const EmojiFinder = () => {
   }, []);
   const handleChange = (e) => {
     let value = e.target.value;
-    setSearch(value);
+    setSearch(value.toLowerCase().trim());
   };
   let filteredArray =
     state &&
@@ -30,7 +30,8 @@ const EmojiFinder = () => {
         aliases.startsWith(search, 0) ||
         tags.startsWith(search, 0) ||
         description.startsWith(search, 0) ||
-        categories.startsWith(search, 0)
+        categories.startsWith(search, 0) || aliases.endsWith(search)
+        || tags.endsWith(search) || description.endsWith(search) || categories.endsWith(search)
       );
     });
   return (

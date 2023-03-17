@@ -6,6 +6,7 @@ const WeatherAPI = () => {
   let [wdata, setWdata] = useState();
   useEffect(() => {
     weatherData();
+    console.log("weather data")
   }, []);
   const weatherData = async () => {
     const response = await fetch(
@@ -23,7 +24,6 @@ const WeatherAPI = () => {
     setSearch(state);
     weatherData();
   };
-  console.log(wdata)
   return (
     <React.Fragment>
       <div className="container text-center"  style={{fontFamily:"roboto"}}>

@@ -2,7 +2,8 @@ import React from 'react'
 
 const Component35 = () => {
   return (
-    <div>Component35</div>
+    <h2> Inspirational Quotes for Everyday Life </h2>
+
   )
 }
 
