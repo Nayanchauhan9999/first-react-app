@@ -137,6 +137,12 @@ function ComponentList() {
         <li>
           <NavLink to="/component35">Quotes API</NavLink>
         </li>
+        <li>
+          <NavLink to="/logicray">Logic Ray Practice</NavLink>
+        </li>
+        <li>
+          <NavLink to="/changecounter">Icrement - Decrement Counter using redux</NavLink>
+        </li>
       </ol>
     </React.Fragment>
   );

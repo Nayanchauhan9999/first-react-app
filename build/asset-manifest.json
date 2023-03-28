@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5af4a1b6.css",
-    "main.js": "/static/js/main.39150585.js",
+    "main.css": "/static/css/main.43efb23c.css",
+    "main.js": "/static/js/main.48aae4ed.js",
     "static/media/patallok.jpg": "/static/media/patallok.a59afcb599a61b555c33.jpg",
     "static/media/mirzapur.jpg": "/static/media/mirzapur.0fa6784d5c2084f7f703.jpg",
     "static/media/shot.jpg": "/static/media/shot.975c0d64d089f2dcac77.jpg",
@@ -11,11 +11,11 @@
     "index.html": "/index.html",
     "static/media/visual-studio-code-1.svg": "/static/media/visual-studio-code-1.b8b1e001813039750e6c05c236ab0d46.svg",
     "static/media/magnifying-glass-solid.svg": "/static/media/magnifying-glass-solid.3cccb2fe95c0d431b52d.svg",
-    "main.5af4a1b6.css.map": "/static/css/main.5af4a1b6.css.map",
-    "main.39150585.js.map": "/static/js/main.39150585.js.map"
+    "main.43efb23c.css.map": "/static/css/main.43efb23c.css.map",
+    "main.48aae4ed.js.map": "/static/js/main.48aae4ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.5af4a1b6.css",
-    "static/js/main.39150585.js"
+    "static/css/main.43efb23c.css",
+    "static/js/main.48aae4ed.js"
   ]
 }

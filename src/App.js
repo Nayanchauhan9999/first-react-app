@@ -14,7 +14,7 @@ import { Top5AmazonSeries } from "./Components/component_9";
 import { UseState } from "./Components/component_10";
 import UpdateTimeOnClick from "./Components/component_11";
 import UpdateTimeAutomatically from "./Components/component_12";
-import TextEditor from "./Components/component_13";
+import TextEditor from "./Components/Sasta Google Docs/component_13";
 import Component14 from "./Components/component_14";
 import Component15 from "./Components/component_15";
 import Component16 from "./Components/component_16";
@@ -46,6 +46,8 @@ import Contact from "./Portfolio site/Contact";
 import Blog from "./Portfolio site/Blog";
 import Component35 from "./Components/Component_35";
 import AllinOneIcon from "./Components/Component_36";
+import LogicRaysPractice from "./Components/Logic Rays/LogicRays";
+import ChangeCounter from "./Components/Inc-Dec-counter-redux";
 function App() {
   return (
     <React.Fragment>
@@ -108,6 +110,9 @@ function App() {
           </Route>
         <Route path="component35" element={<Component35/>} />
         <Route path="allinoneicons" element={<AllinOneIcon/>} />
+        <Route path="logicray" element={<LogicRaysPractice/>} />
+        <Route path="changecounter" element={<ChangeCounter/>} />
+        
         </Routes>
       </BrowserRouter>
     </React.Fragment>

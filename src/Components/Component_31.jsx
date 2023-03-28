@@ -6,7 +6,6 @@ const WeatherAPI = () => {
   let [wdata, setWdata] = useState();
   useEffect(() => {
     weatherData();
-    console.log("weather data")
   }, []);
   const weatherData = async () => {
     const response = await fetch(
@@ -16,12 +15,12 @@ const WeatherAPI = () => {
     setWdata(data);
   };
   const onchange = (event) => {
-    let value = event.target.value;
+    let value = (event.target.value);
     setState(value);
   };
   const searchCity = () => {
-    search = state;
-    setSearch(state);
+    search = state.trim();
+    setSearch(search);
     weatherData();
   };
   return (
