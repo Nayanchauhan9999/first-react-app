@@ -5,7 +5,8 @@ const WeatherAPI = () => {
   let [search, setSearch] = useState("Surendranagar");
   let [wdata, setWdata] = useState();
   useEffect(() => {
-    weatherData();
+    console.log("weatherapi")
+    weatherData()
   }, []);
   const weatherData = async () => {
     const response = await fetch(

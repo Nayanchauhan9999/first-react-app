@@ -571,3 +571,7 @@ p {
 .capitalize{
   text-transform: capitalize;
 }
+/* Age calculator */
+.agecalculator h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

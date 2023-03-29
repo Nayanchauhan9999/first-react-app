@@ -18,9 +18,6 @@ function Component27() {
     const value = e.target.value.toLowerCase();
     setSearch(value.trim());
   };
-  const cName2 = state && state.map((value)=>{
-      return value.name.split(" ")
-  }).flat()
   const filteredArray =
     state &&
     state.filter((value) => {

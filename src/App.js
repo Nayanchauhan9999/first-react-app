@@ -1,5 +1,7 @@
 //Imports
 import React from "react";
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ComponentList from "./Components/Component_list";
 import { Component1 } from "./Components/component_1";
@@ -48,9 +50,11 @@ import Component35 from "./Components/Component_35";
 import AllinOneIcon from "./Components/Component_36";
 import LogicRaysPractice from "./Components/Logic Rays/LogicRays";
 import ChangeCounter from "./Components/Inc-Dec-counter-redux";
+import AgeCalculator from "./Components/AgeCalculator";
 function App() {
   return (
     <React.Fragment>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
       <BrowserRouter>
         <ActiveLastBreadcrumb />
         <Routes>
@@ -112,9 +116,10 @@ function App() {
         <Route path="allinoneicons" element={<AllinOneIcon/>} />
         <Route path="logicray" element={<LogicRaysPractice/>} />
         <Route path="changecounter" element={<ChangeCounter/>} />
-        
+        <Route path="/agecalculator" element={<AgeCalculator/>} />
         </Routes>
       </BrowserRouter>
+      </LocalizationProvider>
     </React.Fragment>
   );
 }

@@ -143,6 +143,9 @@ function ComponentList() {
         <li>
           <NavLink to="/changecounter">Icrement - Decrement Counter using redux</NavLink>
         </li>
+        <li>
+          <NavLink to="/agecalculator">Age Calulator</NavLink>
+        </li>
       </ol>
     </React.Fragment>
   );
