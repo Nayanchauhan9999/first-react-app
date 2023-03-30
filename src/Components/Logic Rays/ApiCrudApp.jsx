@@ -12,7 +12,7 @@ const ApiCrudApp  = () => {
   });
   const [defaultData, setDefaultData] = useState();
   const [edit, setEdit] = useState(false);
-  const [call, setCall] = useState(0)
+  const [call, setCall] = useState()
   useEffect(() => {
     axios
       .get(endPoint)
@@ -32,9 +32,10 @@ const ApiCrudApp  = () => {
       password:userData.password,
       confirmpassword:userData.confirmpassword,
       id: userData.id
+    }).then(()=>{
+      setCall(true)
     })
     alert("Data Updated")
-    setCall(call + 1)
     setUserData({
       firstname: "",
       lastname: "",
@@ -45,9 +46,10 @@ const ApiCrudApp  = () => {
       id: "",
     });
     } else {
-      axios.post(endPoint, userData);
+      axios.post(endPoint, userData).then(()=>{
+        setCall(true)
+      })
       alert("Data Received");
-      setCall(call + 1)
       setUserData({
         firstname: "",
         lastname: "",
@@ -59,6 +61,7 @@ const ApiCrudApp  = () => {
       });
     }
     setEdit(false);
+    setCall(false)
   };
   const handleChange = (e) => {
     const value = e.target.value;
@@ -73,18 +76,22 @@ const ApiCrudApp  = () => {
   const deletData = (userId) => {
     axios.delete(
       `https://641bdea41f5d999a446babdd.mockapi.io/userdata/${userId}`
-    );
-    setDefaultData(
-      defaultData &&
-        defaultData.filter((value) => {
-          return value.id !== userId;
-        })
-    );
+    ).then(()=>{
+      setCall(true)
+    })
+    setCall(false)
+    // setDefaultData(
+    //   defaultData &&
+    //     defaultData.filter((value) => {
+    //       return value.id !== userId;
+    //     })
+    // );
   };
   const editMode = (userId) => {
     axios
       .get(`https://641bdea41f5d999a446babdd.mockapi.io/userdata/${userId}`)
       .then((res) => {
+        setCall(true)
         setUserData({
           firstname: res.data.firstname,
           lastname: res.data.lastname,
@@ -96,6 +103,7 @@ const ApiCrudApp  = () => {
         });
       });
     setEdit(true);
+    setCall(false)
   };
   return (
     <>
@@ -136,7 +144,7 @@ const ApiCrudApp  = () => {
           />
           <label htmlFor="email" className="form-label mt-2">
             Email
-         <span className="text-danger" title="Mandatory Fields"> *</span> </label>
+         <span className="text-danger" title="Mandatory Fields"> * </span> </label>
           <input
             value={userData.email}
             required

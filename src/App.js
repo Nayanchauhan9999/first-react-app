@@ -39,7 +39,6 @@ import WeatherAPI from "./Components/Component_31";
 import ActiveLastBreadcrumb from "./Components/Breadcrumbs";
 import CategoryWiseData from "./Components/Component_32";
 import EmojiFinder from "./Components/Component_33";
-import Calculator from "./Components/Component_34";
 import WindowClone from "./window clone/WindowClone";
 import Portfolio from "./Portfolio site/Portfolio";
 import Home from "./Portfolio site/Home";
@@ -49,8 +48,9 @@ import Blog from "./Portfolio site/Blog";
 import Component35 from "./Components/Component_35";
 import AllinOneIcon from "./Components/Component_36";
 import LogicRaysPractice from "./Components/Logic Rays/LogicRays";
-import ChangeCounter from "./Components/Inc-Dec-counter-redux";
 import AgeCalculator from "./Components/AgeCalculator";
+import Calculator from "./Components/Calculator";
+import UserefHook from "./Components/UserefHook";
 function App() {
   return (
     <React.Fragment>
@@ -104,7 +104,7 @@ function App() {
           <Route path="/WeatherAPI" element={<WeatherAPI />} />
           <Route path="/categoryWiseData" element={<CategoryWiseData />} />
           <Route path="/emojiFinder" element={<EmojiFinder />} />
-          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/userefhook" element={<UserefHook/>} />
           <Route path="windowclone" element={<WindowClone />} />
           <Route path="portfolio" element={<Portfolio />}>
             <Route path="portfolio" element={<Home />} />
@@ -115,7 +115,7 @@ function App() {
         <Route path="component35" element={<Component35/>} />
         <Route path="allinoneicons" element={<AllinOneIcon/>} />
         <Route path="logicray" element={<LogicRaysPractice/>} />
-        <Route path="changecounter" element={<ChangeCounter/>} />
+        <Route path="calculator" element={<Calculator/>} />
         <Route path="/agecalculator" element={<AgeCalculator/>} />
         </Routes>
       </BrowserRouter>

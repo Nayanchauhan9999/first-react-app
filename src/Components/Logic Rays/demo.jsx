@@ -14,6 +14,7 @@ const Demo = () => {
   const [call, setCall] = useState(0);
   const [userData, setUserData] = useState();
   const [editMode, setEditMode] = useState(false)
+  const [deletMode,setDeletMode] = useState(false)
   useEffect(() => {
     const demoData = async () => {
       const response = await axios.get(
@@ -24,7 +25,8 @@ const Demo = () => {
     };
     demoData();
     console.log("demo done");
-  }, [call,editMode]);
+  }, [call,editMode,deletMode]);
+
   const handleChange = (event) => {
     const value = event.target.value;
     const name = event.target.name;
@@ -73,13 +75,18 @@ const Demo = () => {
     
   };
   const deleteData = (userId) => {
-    axios.delete(`https://641bdea41f5d999a446babdd.mockapi.io/demo/${userId}`);
-    setUserData(
-      userData &&
-        userData.filter((value) => {
-          return userId !== value.id;
-        })
-    );
+    axios.delete(`https://641bdea41f5d999a446babdd.mockapi.io/demo/${userId}`).then(()=>{
+      setDeletMode(true)
+    })
+    setDeletMode(false)
+
+    //below is also working
+    // setUserData(
+    //   userData &&
+    //     userData.filter((value) => {
+    //       return userId !== value.id;
+    //     })
+    // );
   };
   const editData = (userId) => {
     axios.get(`${endPoint}/${userId}`).then((res) => {

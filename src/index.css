@@ -575,3 +575,51 @@ p {
 .agecalculator h2{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/* calculator */
+.allbuttons{
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  margin: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 3px;
+  width:100%;
+  min-height: 55px;
+}
+.allbuttons:hover{
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.main-calc-div{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 350px;
+}
+.btn-row{
+  background-color: #0065fc;
+  display: flex;
+  justify-content: space-between;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 1px;
+}
+.output-display{
+  display: block;
+  width: 94%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+  outline: none;
+  font-size: 30px;
+  text-align: right;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0px 10px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+}
+.cal-content-div{
+  background-color: #0065fc;
+}

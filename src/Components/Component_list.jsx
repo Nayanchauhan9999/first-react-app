@@ -126,7 +126,7 @@ function ComponentList() {
           <NavLink to="/emojiFinder">Emoji Finder App</NavLink>
         </li>
         <li>
-          <NavLink to="/calculator">Calculator</NavLink>
+          <NavLink to="/userefhook">UserefHook</NavLink>
         </li>
         <li>
           <NavLink to="/windowclone">windowclone</NavLink>
@@ -141,7 +141,7 @@ function ComponentList() {
           <NavLink to="/logicray">Logic Ray Practice</NavLink>
         </li>
         <li>
-          <NavLink to="/changecounter">Icrement - Decrement Counter using redux</NavLink>
+          <NavLink to="/calculator">Calculator</NavLink>
         </li>
         <li>
           <NavLink to="/agecalculator">Age Calulator</NavLink>
