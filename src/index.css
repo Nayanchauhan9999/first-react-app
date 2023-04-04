@@ -582,7 +582,7 @@ p {
   box-sizing: border-box;
   font-size: 20px;
   border-radius: 3px;
-  width:100%;
+  min-width: 60px;
   min-height: 55px;
 }
 .allbuttons:hover{
@@ -597,16 +597,9 @@ p {
   flex-direction: column;
   min-width: 350px;
 }
-.btn-row{
-  background-color: #0065fc;
-  display: flex;
-  justify-content: space-between;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 1px;
-}
 .output-display{
   display: block;
-  width: 94%;
+  width: 98%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -622,4 +615,157 @@ p {
 }
 .cal-content-div{
   background-color: #0065fc;
+}
+.grid-row-calculator{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  padding: 1px;
+}
+.grid-last-raw-calculator{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  padding: 1px;
+}
+.equal{
+  grid-column: 3/5;
+  min-width: 148px;
+}
+@media screen and (max-width:500px) {
+  .grid-row-calculator{
+    grid-column-gap: 0.5em;
+  }
+  .grid-last-raw-calculator{
+    grid-column-gap: 0.5em;
+  }
+}
+@media screen and (max-width:990px) {
+  .output-display{
+    width: 96%;
+  }
+}
+
+/* Mafatni Moj ecommerce site */
+.active-cart-wishlist, .homepage-mafatnimoj{
+  text-decoration: none
+}
+
+
+/* Flipkart Clone */
+.carousel-main-div{
+  position: relative;
+  margin: 20px;
+}
+.backword-icon, .forward-icon{
+    font-size: 15px;
+}
+.carousel-image-div{
+    height: 50vh;
+    overflow: hidden;
+}
+.cat-image-flipkart{
+    width: 80px;
+}
+.flipkart-navbar{
+  background-color:#0065fc;
+  color: white;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+.flipkart-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+.signup-login-flipkart{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.signup-login-flipkart button{
+  width: 60px;
+  height: 2em;
+  box-sizing:border-box;
+  font-size: 14px;
+  border: 1px solid rgb(201, 200, 200);
+  margin: 2px;
+  background-color: white;
+  color: #0065fc;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.search-bar-flipkart{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.input-field-flipkart, .search-button-flipkart{
+  outline: none;
+  height: 2.5em;
+  box-sizing: border-box;
+  border: 1px solid rgb(201, 200, 200);
+  padding: 2px;
+  font-size: 15px;
+  background-color: white;
+}
+.input-field-flipkart{
+    border-right: none;
+    padding-left: 15px;
+    color: #0065fc;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+.search-button-flipkart{
+    border-left: none;
+    /* padding-right: 15px; */
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: #0065fc;
+}
+.search-button-flipkart:hover{
+    background-color: rgb(238, 234, 234);
+}
+
+@media screen and (max-width:500px) {
+  .carousel-image-div{
+    height: 25vh;
+  }
+  .carousel-main-div{
+    margin: 10px;
+  }
+  .arrow-back, .arrow-forward{
+    padding: 10px 0;
+    background-color: transparent;
+    color:white;
+  }
+  .arrow-back svg , .arrow-forward svg{
+    filter: drop-shadow(2px 2px 1px rgb(0 0 0 / 1));
+  }
+  .cat-image-flipkart{
+    width: 50px;
+  }
+  .cat-name{
+    margin-bottom: 0;
+    font-size: 10px;
+  }
+  .signup-login-flipkart{
+    display: none;
+  }
+  .flipkart-navbar{
+    display: grid;
+  grid-template-columns: 1fr 3fr;
+  }
+  .flipkart-logo img{
+    justify-content: start;
+    width: 70px;
+  }
 }

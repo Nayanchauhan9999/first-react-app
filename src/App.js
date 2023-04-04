@@ -41,7 +41,6 @@ import CategoryWiseData from "./Components/Component_32";
 import EmojiFinder from "./Components/Component_33";
 import WindowClone from "./window clone/WindowClone";
 import Portfolio from "./Portfolio site/Portfolio";
-import Home from "./Portfolio site/Home";
 import About from "./Portfolio site/About";
 import Contact from "./Portfolio site/Contact";
 import Blog from "./Portfolio site/Blog";
@@ -51,6 +50,8 @@ import LogicRaysPractice from "./Components/Logic Rays/LogicRays";
 import AgeCalculator from "./Components/AgeCalculator";
 import Calculator from "./Components/Calculator";
 import UserefHook from "./Components/UserefHook";
+import Home from "./Portfolio site/home";
+import MafatNiMoj from "./Components/EcommerceSite/MafatNiMoj";
 function App() {
   return (
     <React.Fragment>
@@ -107,7 +108,7 @@ function App() {
           <Route path="/userefhook" element={<UserefHook/>} />
           <Route path="windowclone" element={<WindowClone />} />
           <Route path="portfolio" element={<Portfolio />}>
-            <Route path="portfolio" element={<Home />} />
+            <Route path="home" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog />} />
@@ -117,6 +118,7 @@ function App() {
         <Route path="logicray" element={<LogicRaysPractice/>} />
         <Route path="calculator" element={<Calculator/>} />
         <Route path="/agecalculator" element={<AgeCalculator/>} />
+        <Route path="/mafatnimoj/*" element={<MafatNiMoj/>} />
         </Routes>
       </BrowserRouter>
       </LocalizationProvider>

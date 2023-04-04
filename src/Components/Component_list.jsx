@@ -146,6 +146,13 @@ function ComponentList() {
         <li>
           <NavLink to="/agecalculator">Age Calulator</NavLink>
         </li>
+        <li>
+          <NavLink to="/portfolio"> My Portfolio</NavLink>
+        </li>
+        <li>
+          <NavLink to="/mafatnimoj">Ecommerce Store Using Redux</NavLink>
+        </li>
+
       </ol>
     </React.Fragment>
   );

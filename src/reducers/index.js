@@ -1,7 +1,9 @@
-import changeCounter from "./incDEC";
-import { combineReducers } from "redux";
+import { combineReducers } from "redux"
+import changeCounter from "./changeCounter"
+import todolistwithredux from "./todolistwithredux"
 
-const reducerRoot = combineReducers({
-    changeCounter
-})
-export default reducerRoot
+const allReducersRoot = combineReducers(
+    {changeCounter,todolistwithredux}
+)
+
+export default allReducersRoot

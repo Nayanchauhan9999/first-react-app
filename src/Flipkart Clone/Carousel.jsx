@@ -16,14 +16,14 @@ function Carousel() {
 //     setState(newState>bannerImage.length-1? 0 : newState)
 //   }, 5000);
   return (
-    <div style={{position:"relative",margin:"20px"}}>
+    <div className='carousel-main-div'>
     <div className='arrow-back' onClick={prevImage} >
-    <ArrowBackIosIcon sx={{fontSize:30}}/>
+    <ArrowBackIosIcon className='backword-icon'/>
     </div>
     <div className='arrow-forward'>
-        <ArrowForwardIosIcon sx={{fontSize:30}} onClick={nextImage}/>
+        <ArrowForwardIosIcon className='forward-icon' onClick={nextImage}/>
     </div>
-    <div style={{height:"50vh",overflow:"hidden"}}>
+    <div className='carousel-image-div'>
     <img src={bannerImage[state]} alt="" height="100%" width="100%"/>
     </div>
     </div>

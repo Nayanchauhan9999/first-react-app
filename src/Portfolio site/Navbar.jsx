@@ -17,14 +17,14 @@ const Navbar = () => {
       fontWeight: isActive ? "500" : "",
     };
   };
-  
+
   return (
     <>
       <div className="Navbar_portfolio">
         <div className="logo_portfolio">Nayan Portfolio</div>
         <ul className="navitems_portfolio">
           <li>
-            <NavLink style={activeclass} to="portfolio">
+            <NavLink style={activeclass} to="home">
               Home
             </NavLink>
           </li>
@@ -52,28 +52,16 @@ const Navbar = () => {
       </div>
       {togglebar ? (
         <ul className="navitems_portfolio_mobile">
-          <NavLink
-            style={activeclass}
-            to="portfolio"
-          >
+          <NavLink style={activeclass} to="home">
             Home
           </NavLink>
-          <NavLink
-            style={activeclass}
-            to="about"
-          >
+          <NavLink style={activeclass} to="about">
             About Me
           </NavLink>
-          <NavLink
-            style={activeclass}
-            to="contact"
-          >
+          <NavLink style={activeclass} to="contact">
             Contact
           </NavLink>
-          <NavLink
-            style={activeclass}
-            to="blog"
-          >
+          <NavLink style={activeclass} to="blog">
             Blog
           </NavLink>
         </ul>

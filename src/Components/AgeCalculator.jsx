@@ -41,9 +41,11 @@ const AgeCalculator = () => {
 
     // week + day
     const weekAndDayBetweenTwoDate1 = Math.trunc(dayBetweenTwoDate / 7);
-    const weekAndDayBetweenTwoDate2 = (dayBetweenTwoDate / 7)
+    let weekAndDayBetweenTwoDate2 = (dayBetweenTwoDate / 7).toFixed(1)
       .toString()
-      .split(".")[1][0];
+      .split(".")[1]
+      
+    console.log(weekAndDayBetweenTwoDate2)
 
     const birthdateYear = new Date(state.birthdate).getFullYear();
     const currentdateYear = new Date(state.currentdate).getFullYear();
@@ -75,15 +77,15 @@ const AgeCalculator = () => {
       dayDifference += daysInMonth[birthdateMonth];
     }
     setAgeData({
-      second: secondBetweenTwoDate.toLocaleString("hi-IN"),
-      minute: minuteBetweenTwoDate.toLocaleString("hi-IN"),
-      hour: hourBetweenTwoDate.toLocaleString("hi-IN"),
-      totalDay: dayBetweenTwoDate.toLocaleString("hi-IN"),
-      week: weekAndDayBetweenTwoDate1.toLocaleString("hi-IN"),
-      weekWithDay: weekAndDayBetweenTwoDate2.toLocaleString("hi-IN"),
-      year: yearDifference.toLocaleString("hi-IN"),
-      yearWithMonth: monthDifference.toLocaleString("hi-IN"),
-      yearMonthAndDay: dayDifference.toLocaleString("hi-IN"),
+      second: secondBetweenTwoDate,
+      minute: minuteBetweenTwoDate,
+      hour: hourBetweenTwoDate,
+      totalDay: dayBetweenTwoDate,
+      week: weekAndDayBetweenTwoDate1,
+      weekWithDay: weekAndDayBetweenTwoDate2,
+      year: yearDifference,
+      yearWithMonth: monthDifference,
+      yearMonthAndDay: dayDifference,
     });
     setShow(true);
   };

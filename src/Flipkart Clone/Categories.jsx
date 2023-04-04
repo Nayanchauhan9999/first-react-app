@@ -7,7 +7,7 @@ function Categories() {
         {categoryItems.map((value,index)=>{
             return (
                     <div key={index} style={{padding:"10px",cursor:"pointer"}} className="d-flex align-items-center flex-column">
-                    <img src={value.image} alt="" height={80} width={80}/>
+                    <img src={value.image} alt="" className='cat-image-flipkart'/>
                     <h6 className='text-center cat-name'> {value.name} </h6>
                     </div>
             )

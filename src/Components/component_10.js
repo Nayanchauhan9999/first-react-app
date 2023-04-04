@@ -1,33 +1,43 @@
 import React from "react";
-import { useState } from "react";
-
+import { useSelector, useDispatch } from "react-redux";
+import {
+  incrementCounter,
+  decrementCounter,
+  resetCounter,
+} from "../actions/action";
 function UseState() {
-  // Array destructuring in javascript
-  //   let name = ["nayan", "hitesh", "darshan"];
-  //   console.log(name);
-  //   let [n, h, d] = name;
-
-//   let state = useState(0); //Aam Zindagi
-    let [state,setState] = useState(0); // After ES6 array distructuring (Mentos zindagi)
-  const increment = ()=>{
-     setState(state +1)
-  }
-  const decrement = ()=>{
-     setState(state -1)
-  }
-  const reset = ()=>{
-     setState(0)
-  }
-  
+  const myState = useSelector((state) => state.changeCounter);
+  const dispatch = useDispatch();
   return (
     <React.Fragment>
-    <hr/>
-    <h1>increment counter and Decrement Counter : component - 10</h1>
-      <h1>{state} </h1>
-      <button onClick={increment}>Increment(+)</button>
-      <button onClick={decrement}>Decrement(-)</button>
-      <button onClick={reset}>Reset</button>
-
+      <div className="container text-center bg-light border">
+        <h1 className="display-6">
+          Increment counter and Decrement Counter : Using{" "}
+          <strong className="text-danger">Redux</strong>
+        </h1>
+        <h1 className="bg-dark text-light text">{myState} </h1>
+        <button
+          className="btn btn-dark m-1"
+          onClick={() => dispatch(decrementCounter())}
+        >
+          Decrement(-)
+        </button>
+        <button
+          className="btn btn-danger m-1"
+          onClick={() => dispatch(incrementCounter())}
+        >
+          Increment(+)
+        </button>
+        <button
+          className="btn btn-warning m-1"
+          onClick={() => dispatch(resetCounter())}
+        >
+          Reset
+        </button>
+      </div>
+      {/* <div className="container mt-5 bg-light border">
+        <h2 className="display-6">How to Create Store In Redux?</h2>
+      </div> */}
     </React.Fragment>
   );
 }

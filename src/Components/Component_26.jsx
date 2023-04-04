@@ -32,7 +32,6 @@ function Component26() {
         });
     }
     function userInput(event) {
-        // let name = event.target.name;
         let value = event.target.value;
         let name = event.target.name;
         setInput((preVal)=>{
@@ -57,7 +56,6 @@ function Component26() {
                     name= "firstInput"
                 />
                 <select name="from" onChange={onchangeSelect} >
-                    {/* <option key="cool">--Please choose an option--</option> */}
                     {currency.map((value, index) => {
                         return (
                             <option key={index} value={value.code}>
@@ -81,7 +79,6 @@ function Component26() {
                     name = "secondInput"
                 />
                 <select name="to" onChange={onchangeSelect}>
-                    {/* <option key="nayan">--Please choose an option--</option> */}
                     {currency.map((value, index) => {
                         return (
                             <option key={index} value={value.code}>
