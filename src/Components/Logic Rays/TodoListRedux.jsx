@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 
 const TodoListRedux = () => {
   const [input, setInput] = useState();
-  
   return (
     <>
       <hr />
@@ -23,15 +22,21 @@ const TodoListRedux = () => {
             onChange={(e) => setInput(e.target.value)}
             value={input}
           />
-          <Button variant="outlined" className="d-block w-100 mb-2">
+          <Button
+            variant="outlined"
+            className="d-block w-100 mb-2"
+          >
             Add Item
           </Button>
-          <Button variant="contained" className="d-block w-100">
+          <Button
+            variant="contained"
+            className="d-block w-100"
+          >
             Remove All Items
           </Button>
           <div className="container-fluid mt-5">
             <ol>
-              <li>apple</li>
+              <li>Apple</li>
             </ol>
           </div>
         </div>

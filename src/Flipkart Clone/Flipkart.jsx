@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import "./flipkart.css"
 import Categories from './Categories'
 import Carousel from './Carousel'
+import BottomBar from './BottomBar'
+import ProductCategory from './ProductCategory'
 
 function Flipkart() {
   return (
@@ -10,6 +12,9 @@ function Flipkart() {
         <Navbar/>
         <Categories/>
         <Carousel/>
+        <ProductCategory/>
+
+        <BottomBar/>
     </>
   )
 }

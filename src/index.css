@@ -687,7 +687,7 @@ p {
 }
 .signup-login-flipkart{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .signup-login-flipkart button{
@@ -734,10 +734,37 @@ p {
 .search-button-flipkart:hover{
     background-color: rgb(238, 234, 234);
 }
+.bottombar-main-div-flipkart{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  position:fixed;
+  bottom: 0;
+  display: none;
+  z-index: 100;
+}
+.home-flipkart-bottombar:hover,.Notification-flipkart-bottombar:hover,.profile-flipkart-bottombar:hover,.wishlist-flipkart-bottombar:hover,.cart-flipkart-bottombar:hover{
+  color: #0065fc;
+  cursor: pointer;
+}
+.bottombar-menu-name-flipkart{
+  display: block;
+  font-size: 10px;
+}
+.cat-div::-webkit-scrollbar{
+  display: none;
+}
+.category-name-banner{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+
 
 @media screen and (max-width:500px) {
   .carousel-image-div{
-    height: 25vh;
+    height: 20vh;
   }
   .carousel-main-div{
     margin: 10px;
@@ -757,6 +784,12 @@ p {
     margin-bottom: 0;
     font-size: 10px;
   }
+  .carousel-main-div{
+    margin: 0;
+  }
+  .cat-div{
+    margin-bottom: 5px;
+  }
   .signup-login-flipkart{
     display: none;
   }
@@ -767,5 +800,8 @@ p {
   .flipkart-logo img{
     justify-content: start;
     width: 70px;
+  }
+  .bottombar-main-div-flipkart{
+    display:grid;
   }
 }
