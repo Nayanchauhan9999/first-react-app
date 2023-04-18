@@ -18,7 +18,6 @@ const ApiCrudApp  = () => {
       .get(endPoint)
       .then((res) => setDefaultData(res.data))
       .catch((error) => console.log(error));
-    console.log("render");
   }, [call]);
   const endPoint = "https://641bdea41f5d999a446babdd.mockapi.io/userdata";
 

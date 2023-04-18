@@ -10,6 +10,7 @@ const Calculator = () => {
   };
   const operatorList = ["+", "-", "%", "/", "*", "."];
   const calculate = () => {
+    // eslint-disable-next-line
     const answer = eval(state);
     setState(answer.toString());
   };

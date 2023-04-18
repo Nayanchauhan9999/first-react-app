@@ -5,8 +5,8 @@ const WeatherAPI = () => {
   let [search, setSearch] = useState("Surendranagar");
   let [wdata, setWdata] = useState();
   useEffect(() => {
-    console.log("weatherapi")
     weatherData()
+    // eslint-disable-next-line
   }, []);
   const weatherData = async () => {
     const response = await fetch(

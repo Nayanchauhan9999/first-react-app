@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 export default function Component15() {
-  let x = "Nayan Chauhan";
   const [one, oneSet] = useState("");
   const [second, secondSet] = useState("");
   const [third, setThird] = useState("");

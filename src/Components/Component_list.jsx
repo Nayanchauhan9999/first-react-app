@@ -6,13 +6,13 @@ function ComponentList() {
     <React.Fragment>
       <ol>
         <li>
-          <NavLink to="/component1">Component 1 : First React Program</NavLink>
+          <NavLink to="/VoiceToText">Voice to Text Converter</NavLink>
         </li>
         <li>
-          <NavLink to="/Component2">Component 2 : JS variable in JSX</NavLink>
+          <NavLink to="/tictactoe">Tic-Tac-Toe</NavLink>
         </li>
         <li>
-          <NavLink to="/Component3">Component 3 : Template Litrals</NavLink>
+          <NavLink to="/otherprojects">Other Projects</NavLink>
         </li>
         <li>
           <NavLink to="/Component4">
@@ -69,11 +69,12 @@ function ComponentList() {
           <NavLink to="/Component17">Component 17 : Complex Form</NavLink>
         </li>
         <li>
-          <NavLink to="/Component18">Component 18 : Todo List Trial</NavLink>
+          <NavLink to="/todolist">Todo List : Normal</NavLink>
         </li>
         <li>
-          <NavLink to="/Component19">Component 19 : Todo List Final</NavLink>
+          <NavLink to="/todolistredux">Todo List : Redux</NavLink>
         </li>
+        
         <li>
           <NavLink to="/Component20">Component 20 : Accordian</NavLink>
         </li>
@@ -92,13 +93,13 @@ function ComponentList() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/HindiJokes">Component 25 : Hindi Jokes(api)</NavLink>
+          <NavLink to="/HindiJokes">Hindi Jokes</NavLink>
         </li>
         <li>
-          <NavLink to="/Component26">Component 26 : Currency Exchange</NavLink>
+          <NavLink to="/currencyExchanger">Currency Exchange</NavLink>
         </li>
         <li>
-          <NavLink to="/Component27">Component 27 : Country Flags</NavLink>
+          <NavLink to="/CountryFlags">Country Flags Data</NavLink>
         </li>
         <li>
           <NavLink to="/ReactRouterDom/*">

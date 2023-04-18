@@ -4,9 +4,9 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ComponentList from "./Components/Component_list";
-import { Component1 } from "./Components/component_1";
-import { Component2 } from "./Components/component_2";
-import { Component3 } from "./Components/component_3";
+import { VoiceToText } from "./Components/VoiceToText";
+import { TicTacToe } from "./Components/TicTacToe";
+import OtherProjects from "./Components/OtherProjects"
 import { Component4 } from "./Components/component_4";
 import { Component5 } from "./Components/component_5";
 import { Component6 } from "./Components/component_6";
@@ -21,17 +21,17 @@ import Component14 from "./Components/component_14";
 import Component15 from "./Components/component_15";
 import Component16 from "./Components/component_16";
 import Component17 from "./Components/component_17";
-import Component18 from "./Components/Component_18";
-import Component19 from "./Components/Component_19";
+import TodoListRedux from "./Components/TodoListRedux";
+import TodoList from "./Components/TodoList";
 import { Component20, Accordion } from "./Components/Component_20";
 import { AccordionGroup } from "./Components/Component_21";
 import { Component22 } from "./Components/Component_22";
 import FetchAPI from "./Components/Component_23";
 import EnglishJokes from "./Components/Component_24";
-import HindiJokes from "./Components/Component_25";
+import HindiJokes from "./Components/HindiJokes";
 import ReactRouterDom from "./Components/Component_28";
-import Component26 from "./Components/Component_26";
-import Component27 from "./Components/Component_27";
+import CurrencyConverter from "./Components/CurrencyConverter";
+import CountryFlags from "./Components/CountryFlags";
 // import NewsAPI from "./Components/Component_29";
 import StockMarket from "./Components/Component_30";
 import Flipkart from "./Flipkart Clone/Flipkart";
@@ -60,9 +60,9 @@ function App() {
         <ActiveLastBreadcrumb />
         <Routes>
           <Route path="/" element={<ComponentList />} />
-          <Route path="/Component1" element={<Component1 />} />
-          <Route path="/Component2" element={<Component2 />} />
-          <Route path="/Component3" element={<Component3 />} />
+          <Route path="/VoiceToText" element={<VoiceToText />} />
+          <Route path="/tictactoe" element={<TicTacToe />} />
+          <Route path="/otherprojects" element={<OtherProjects />} />
           <Route path="/Component4" element={<Component4 />} />
           <Route path="/Component5" element={<Component5 />} />
           <Route path="/Component6" element={<Component6 />} />
@@ -80,8 +80,8 @@ function App() {
           <Route path="/Component15" element={<Component15 />} />
           <Route path="/Component16" element={<Component16 />} />
           <Route path="/Component17" element={<Component17 />} />
-          <Route path="/Component18" element={<Component18 />} />
-          <Route path="/Component19" element={<Component19 />} />
+          <Route path="/todolistredux" element={<TodoListRedux />} />
+          <Route path="/todolist" element={<TodoList />} />
           <Route
             path="/Component20"
             element={
@@ -96,12 +96,12 @@ function App() {
           <Route path="/FetchAPI" element={<FetchAPI />} />
           <Route path="/EnglishJokes" element={<EnglishJokes />} />
           <Route path="/HindiJokes" element={<HindiJokes />} />
-          <Route path="/Component26" element={<Component26 />} />
-          <Route path="/Component27" element={<Component27 />} />
+          <Route path="/currencyexchanger" element={<CurrencyConverter />} />
+          <Route path="/CountryFlags" element={<CountryFlags />} />
           <Route path="/ReactRouterDom/*" element={<ReactRouterDom />} />
           {/* <Route path="/NewsAPI" element={<NewsAPI/>} /> */}
           <Route path="/StockMarket" element={<StockMarket />} />
-          <Route path="/flipkart" element={<Flipkart />} />
+          <Route path="/flipkart/*" element={<Flipkart />} />
           <Route path="/WeatherAPI" element={<WeatherAPI />} />
           <Route path="/categoryWiseData" element={<CategoryWiseData />} />
           <Route path="/emojiFinder" element={<EmojiFinder />} />

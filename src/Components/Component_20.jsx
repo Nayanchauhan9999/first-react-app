@@ -4,7 +4,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 function Component20() {
   return (
     <React.Fragment>
-      <hr />
       <h2>Accordion : Component 20 </h2>
     </React.Fragment>
   );
