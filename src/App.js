@@ -7,8 +7,8 @@ import ComponentList from "./Components/Component_list";
 import { VoiceToText } from "./Components/VoiceToText";
 import { TicTacToe } from "./Components/TicTacToe";
 import OtherProjects from "./Components/OtherProjects"
-import { Component4 } from "./Components/component_4";
-import { Component5 } from "./Components/component_5";
+import FormChallenge from "./Components/FormChallenge";
+import Youtube from "./Components/Youtube";
 import { Component6 } from "./Components/component_6";
 import { Component7 } from "./Components/component_7";
 import { Component8 } from "./Components/component_8";
@@ -38,7 +38,7 @@ import Flipkart from "./Flipkart Clone/Flipkart";
 import WeatherAPI from "./Components/Component_31";
 import ActiveLastBreadcrumb from "./Components/Breadcrumbs";
 import CategoryWiseData from "./Components/Component_32";
-import EmojiFinder from "./Components/Component_33";
+import EmojiFinder from "./Components/EmojiFinder";
 import WindowClone from "./window clone/WindowClone";
 import Portfolio from "./Portfolio site/Portfolio";
 import About from "./Portfolio site/About";
@@ -63,8 +63,8 @@ function App() {
           <Route path="/VoiceToText" element={<VoiceToText />} />
           <Route path="/tictactoe" element={<TicTacToe />} />
           <Route path="/otherprojects" element={<OtherProjects />} />
-          <Route path="/Component4" element={<Component4 />} />
-          <Route path="/Component5" element={<Component5 />} />
+          <Route path="/formchallenge" element={<FormChallenge/>} />
+          <Route path="/youtube" element={<Youtube />} />
           <Route path="/Component6" element={<Component6 />} />
           <Route path="/Component7" element={<Component7 />} />
           <Route path="/Component8" element={<Component8 />} />

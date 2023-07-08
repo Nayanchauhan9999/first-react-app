@@ -15,12 +15,12 @@ function ComponentList() {
           <NavLink to="/otherprojects">Other Projects</NavLink>
         </li>
         <li>
-          <NavLink to="/Component4">
-            Component 4 : Date and Time in react Js
+          <NavLink to="/formchallenge">
+            Form Challenge
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Component5">Component 5 : JSX attribute in JSX</NavLink>
+          <NavLink to="/youtube">Youtube API</NavLink>
         </li>
         <li>
           <NavLink to="/Component6">Component 6 : Anchor Tag in JSX</NavLink>
